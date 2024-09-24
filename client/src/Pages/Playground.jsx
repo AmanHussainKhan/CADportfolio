@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const FallingButtons = () => {
   const [positions, setPositions] = useState([]);
@@ -45,8 +46,8 @@ const FallingButtons = () => {
             top: "-60px" /* Start above the screen */,
             // width: "60px",
             height: "60px",
-            padding:"30px",
-            color:"whitesmoke",
+            padding: "30px",
+            color: "whitesmoke",
             borderRadius: "50%",
             // backgroundColor: "lightblue",
             display: "flex",
@@ -63,8 +64,9 @@ const FallingButtons = () => {
           Keep Coding
         </div>
       ))}
-      <button className="bg-yellow-300 px-2 border">Enter</button>
-
+      <Link to="/practice">
+        <button className="bg-yellow-300 px-2 border">Enter</button>
+      </Link>
       <style>{`
         @keyframes fall {
           0% {

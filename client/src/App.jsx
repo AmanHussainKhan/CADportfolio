@@ -24,6 +24,8 @@ import BgChanger from "./SmallProjects/BgChanger";
 import Todo from "./MERNPROJECTS/Todo/Todo";
 import ReduxCart from "./SmallProjects/ReduxCart";
 import ReduxCartTotal from "./SmallProjects/ReduxCartTotal";
+import Practice from "./Pages/Practice";
+
 function App() {
   return (
     <BrowserRouter>
@@ -34,6 +36,7 @@ function App() {
         <Route path="/paint" element={<Paint />}></Route>
         <Route path="/weatherapp" element={<WeatherApp />}></Route>
         <Route path="/playground" element={<Playground />}></Route>
+        <Route path="/practice" element={<Practice />}></Route>
         <Route path="/countdowntimer" element={<CountDownTimer />}></Route>
         <Route path="/bns" element={<BNSHome />}></Route>
         <Route path="/project" element={<ProjectPage />}></Route>
