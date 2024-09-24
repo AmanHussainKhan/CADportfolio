@@ -47,6 +47,18 @@ function Home() {
             </Link>
           </div>
         </div>
+        <div className="block md:hidden pl-5 underline text-blue-500 mt-20">
+          <Link to="/about">
+            <li>About myself</li>
+          </Link>
+          <Link to="/project">
+            <li>Projects</li>
+          </Link>
+          <Link to="/feedback">
+            <li>Feedback</li>
+          </Link>
+        </div>
+
         {/* <div className="w-full flex justify-center">
           <h1 className=" text-lg text-center text-zinc-500 max-w-[600px]">
             <span className="text-[#4379F2]">Coding Alone Diaries</span> is my
