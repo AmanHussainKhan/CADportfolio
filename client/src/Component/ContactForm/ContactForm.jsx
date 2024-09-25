@@ -18,19 +18,19 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log("Form submitted successfully");
+      alert(`Thanks ${formdata.name} for your feedback.`);
       // Handle form submission logic here
     } else {
       console.log("Form has errors");
     }
-    axios
-      .post("http://localhost:3000/create", { ...formdata })
-      .then((result) => {
-        console.log("axios result", result);
-      })
-      .catch((err) => {
-        console.log("axios me error", err);
-      });
+    // axios
+    //   .post("http://localhost:3000/create", { ...formdata })
+    //   .then((result) => {
+    //     console.log("axios result", result);
+    //   })
+    //   .catch((err) => {
+    //     console.log("axios me error", err);
+    //   });
     setFormdata({
       name: "",
       email: "",

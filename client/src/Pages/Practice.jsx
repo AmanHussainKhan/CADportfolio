@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaToggleOff } from "react-icons/fa6";
 import { FaToggleOn } from "react-icons/fa6";
 import Accordian from "../25PROJECTS/Accordian";
+import KitneKa from "../SmallProjects/KitneKa";
 
 function Practice() {
   const [toggle, setToggle] = useState(false);
@@ -23,6 +24,7 @@ function Practice() {
         {/* {toggle ? <p>toggle true</p> : <p>toggle false</p>} */}
       </div>
       <Accordian />
+      <KitneKa />
     </div>
   );
 }

@@ -29,7 +29,8 @@ function Home() {
           </h2>
         </div> */}
         <h1 className="text-5xl md:text-5xl font-semibold text-center text-zinc-900 mt-20 px-2">
-          Aman Hussain Khan <span className="font-extrabold">:</span> <span className="text-blue-600 font-semibold">Web Developer</span>
+          Aman Hussain Khan <span className="font-extrabold">:</span>{" "}
+          <span className="text-blue-600 font-semibold">Web Developer</span>
         </h1>
         <h1 className="text-2xl md:text-2xl text-center text-zinc-500 mt-6 px-2">
           Website to showcase my web-dev experties.
@@ -43,7 +44,7 @@ function Home() {
             </a>
           </div>
           <div>
-            <Link to="/joincommunity">
+            <Link to="/loginpage">
               <SignInButton />
             </Link>
           </div>
@@ -73,7 +74,9 @@ function Home() {
         {/* <TestPage /> */}
       </div>
       <div className=" bg-[#D1E9F6] flex w-[100%] flex-col items-center justify-center pb-20">
-       <h1 className="text-2xl mb-8 font-semibold">Frequently asked Questions</h1>
+        <h1 className="text-2xl mb-8 font-semibold">
+          Frequently asked Questions
+        </h1>
         <Accordion />
       </div>
       <div className="w-[100%]">

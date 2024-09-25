@@ -13,7 +13,7 @@ import LoginRegisterPage from "./Pages/LoginRegisterPage";
 import PageNotFound from "./Pages/PageNotFound";
 import TTT from "./Pages/TTT";
 import ProjectPage from "./Pages/ProjectPage";
-import HelpmeCodePage from "./Pages/HelpmeCodePage";
+import HelpmeCodePage from "./Pages/LoginPage";
 import BNSHome from "./BNS/BNSHome";
 import Paint from "./SmallProjects/Paint";
 import WeatherApp from "./SmallProjects/WeatherApp";
@@ -25,8 +25,13 @@ import Todo from "./MERNPROJECTS/Todo/Todo";
 import ReduxCart from "./SmallProjects/ReduxCart";
 import ReduxCartTotal from "./SmallProjects/ReduxCartTotal";
 import Practice from "./Pages/Practice";
+import HelpmeCodeSignup from "./Component/UserRegisterPage";
+import UserRegisterPage from "./Component/UserRegisterPage";
+import HelpMeCodersHome from "./Pages/Helpmecoder/HelpMeCodersHome";
 
 function App() {
+  const isUserSignedIn = !!localStorage.getItem("token");
+
   return (
     <BrowserRouter>
       <Routes>
@@ -41,7 +46,16 @@ function App() {
         <Route path="/bns" element={<BNSHome />}></Route>
         <Route path="/project" element={<ProjectPage />}></Route>
         <Route path="/feedback" element={<ConnectPage />}></Route>
-        <Route path="/joincommunity" element={<HelpmeCodePage />}></Route>
+        // HELP ME code
+        <Route path="/loginpage" element={<HelpmeCodePage />}></Route>
+        <Route path="/signuppage" element={<UserRegisterPage />}></Route>
+        {isUserSignedIn && (
+          <Route
+            path="/helpmecodershome"
+            element={<HelpMeCodersHome />}
+          ></Route>
+        )}
+        // -------------//
         <Route path="/addedCartItem" element={<AddedCartItemPage />}></Route>
         <Route path="/ttt" element={<Board />}></Route>
         <Route path="/bgChanger" element={<BgChanger />}></Route>
