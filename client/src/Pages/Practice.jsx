@@ -25,6 +25,7 @@ function Practice() {
       </div>
       <Accordian />
       <KitneKa />
+  
     </div>
   );
 }

@@ -9,6 +9,7 @@ import SignInButton from "../Component/Buttons/SignInButton";
 import Resume from "../Download Resume/Resume.pdf";
 import { Link } from "react-router-dom";
 import Accordion from "../25PROJECTS/Accordian";
+import GlitchText from "../Component/GlitchText";
 
 function Home() {
   return (
@@ -49,6 +50,7 @@ function Home() {
             </Link>
           </div>
         </div>
+        <GlitchText />
         <div className="block md:hidden pl-5 underline text-blue-500 mt-20">
           <Link to="/about">
             <li>About myself</li>
@@ -73,7 +75,7 @@ function Home() {
           </div> */}
         {/* <TestPage /> */}
       </div>
-      <div className=" bg-[#D1E9F6] flex w-[100%] flex-col items-center justify-center pb-20">
+      <div className=" bg-[#D1E9F6] pt-40 md:pt-0 flex w-[100%] flex-col items-center justify-center pb-20">
         <h1 className="text-2xl mb-8 font-semibold">
           Frequently asked Questions
         </h1>
